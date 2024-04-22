@@ -67,7 +67,7 @@ public class Student {
 
     public static int getCountStudents() {
         //Vasya
-        return 0;
+        return setStudents.size();
     }
 
     @Override
