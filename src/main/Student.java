@@ -51,7 +51,19 @@ public class Student {
         this.phoneNumber = phoneNumber;
     }
 
-    //equals - Kirill
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null || getClass() != obj.getClass())
+            return false;
+        Student student = (Student) obj;
+        return age == student.age &&
+                phoneNumber == student.phoneNumber &&
+                Objects.equals(name, student.name) &&
+                Objects.equals(email, student.email);
+    }
+
 
     //hash code - Max Lixachev
 
