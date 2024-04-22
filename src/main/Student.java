@@ -51,9 +51,16 @@ public class Student {
         this.phoneNumber = phoneNumber;
     }
 
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, email, phoneNumber);
+    }
+
     //equals - Kirill
 
     //hash code - Max Lixachev
+
 
     //compareTo - Max Noskov
 
