@@ -62,8 +62,14 @@ public class Student {
     }
 
     public static void removeStudent(long phoneNumber) {
-        //Matvey
+        for (Iterator<Student> iterator = setStudents.iterator(); iterator.hasNext();) {
+            Student student = iterator.next();
+            if (student.getPhoneNumber() == phoneNumber) {
+                iterator.remove();
+            }
+        }
     }
+
 
     public static int getCountStudents() {
         //Vasya
