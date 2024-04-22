@@ -55,7 +55,7 @@ public class Student implements Comparable<Student> {
 
     //hash code - Max Lixachev
 
-    //compareTo - Max Noskov new
+    //compareTo - Max Noskov new new
     @Override
     public int compareTo(Student o) {
         return name.compareTo(o.getName());
