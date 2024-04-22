@@ -3,7 +3,7 @@ package main;
 
 import java.util.*;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private static int count = 0;
     private String name; //Misha
     private int age; //23
@@ -56,6 +56,10 @@ public class Student {
     //hash code - Max Lixachev
 
     //compareTo - Max Noskov
+    @Override
+    public int compareTo(Student o) {
+        return name.compareTo(o.getName());
+    }
 
     public static void printInformationAboutStudents() {
         //Vlad
