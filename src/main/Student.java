@@ -66,7 +66,7 @@ public class Student {
     }
 
     public static int getCountStudents() {
-        //Vasya
+        //Vasya petrenko
         return setStudents.size();
     }
 
